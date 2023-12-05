@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaInstagram, FaSnapchat, FaFacebook } from 'react-icons/fa';
 
 const variants = {
   initial: {
@@ -31,10 +32,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_hnv07oc",
+        "template_6hr365m",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "3Jr3UQctch9lVyz8w"
       )
       .then(
         (result) => {
@@ -55,19 +56,43 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
+        <motion.h1 variants={variants}>For session bookings and more information</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <h2>Email</h2>
+          <span>ritascholl812@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+          <h2>Signal</h2>
+          <span>7162885098 or Rita Scholl</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>9312299152</span>
         </motion.div>
+        <motion.div className="item" variants={variants}>
+          <h2>Instagram</h2>
+          <span>ritascholl812</span>
+        </motion.div>
+        <motion.div className="item" variants={variants}>
+          <h2>Facebook</h2>
+          <span>rita scholl</span>
+        </motion.div>
+        <motion.div className="item" variants={variants}>
+          <h2>Snapchat</h2>
+          <span>schollrita121</span>
+        </motion.div>
+        {/* Social Media Icons */}
+          <motion.div variants={variants} className="socialIcons">
+            <a href="your-instagram-link" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="your-snapchat-link" target="_blank" rel="noopener noreferrer">
+              <FaSnapchat />
+            </a>
+            <a href="your-facebook-link" target="_blank" rel="noopener noreferrer">
+              <FaFacebook />
+            </a>
+          </motion.div>
       </motion.div>
       <div className="formContainer">
         <motion.div
@@ -107,7 +132,8 @@ const Contact = () => {
           transition={{ delay: 4, duration: 1 }}
         >
           <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
+          <input type="email" required placeholder="Email" name="email" />
+          <input type="text" required placeholder="Subject" name="subject" />
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}
