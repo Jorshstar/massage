@@ -87,7 +87,7 @@ const Single = ({ item }) => {
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <div className="textContainer" style={{y}}>
+          <div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <a href="https://form.jotform.com/231960883666065" target="_blank" rel="noopener noreferrer">
