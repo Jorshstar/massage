@@ -87,13 +87,13 @@ const Single = ({ item }) => {
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <a href="https://form.jotform.com/231960883666065" target="_blank" rel="noopener noreferrer">
               <button>Schedule Appointment</button>
             </a>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
