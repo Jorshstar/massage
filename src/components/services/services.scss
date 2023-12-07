@@ -109,7 +109,19 @@
             color: aliceblue;
 
             @include mobile{
-              cursor: pointer;
+              background-color: transparent;
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          width: 200px;
+          cursor: pointer;
+          color: aliceblue;
+          font-size: 14px;
+
+          &:hover {
+            background-color: #ff8c00;
+            color: aliceblue;
+              
             }
           }
         }
