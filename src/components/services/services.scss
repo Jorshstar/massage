@@ -71,11 +71,10 @@
         gap: 30px;
 
         @include mobile {
-          
+          transform: none !important;
           padding: 10px;
           align-items: center;
           text-align: center;
-          width: 100%;
         }
 
         h2 {
@@ -100,7 +99,7 @@
           padding: 20px;
           border: 1px solid white;
           border-radius: 10px;
-          width: 100%;
+          width: 200px;
           cursor: pointer;
           color: aliceblue;
           font-size: 14px;
