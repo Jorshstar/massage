@@ -7,6 +7,9 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Services from "./components/services/Services";
 import About from "./components/about/About";
+import Testimonial from "./components/testimonial/testimonial";
+import Footer from "./components/footers/Footer";
+
 
 const App = () => {
   return (
@@ -21,13 +24,20 @@ const App = () => {
         
       </section>
       <About />
+      
+        <Testimonial />
+      
       <section id="Services">
         <Parallax type="services" />
       </section>
       <Services />
-      <section id="Contact">
-        <Contact />
-      </section>
+      
+      <Contact />
+      
+        <Footer />
+      
+
+      
       {/* Framer Motion Crash Course */}
       {/* <Test/>
     <Test/> */}

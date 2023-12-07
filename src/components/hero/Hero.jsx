@@ -1,6 +1,7 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
 import { FaInstagram, FaSnapchat, FaFacebook } from 'react-icons/fa';
+import { Link } from "react-scroll";
 
 const textVariants = {
   initial: {
@@ -39,6 +40,14 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+
+  const handleServicesClick = () => {
+    console.log("services clicked");
+  }
+
+  const handleContactClick = () => {
+    console.log("contact clicked");
+  }
   return (
     <div className="hero">
       <div className="wrapper">
@@ -58,22 +67,28 @@ const Hero = () => {
 
           {/* Social Media Icons */}
           <motion.div variants={textVariants} className="socialIcons">
-            <a href="your-instagram-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/ritascholl446/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="your-snapchat-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.snapchat.com/add/schollrita121" target="_blank" rel="noopener noreferrer">
               <FaSnapchat />
             </a>
-            <a href="your-facebook-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/rita.scholl" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
           </motion.div>
           
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
+            <Link to="Services" smooth={true} duration={50}>
+            <motion.button variants={textVariants} onClick={handleServicesClick}>
+              services
+              </motion.button>
+            </Link>
+            <Link to="Contact" smooth={true} duration={50}>
+            <motion.button variants={textVariants} onClick={handleContactClick}>
+              Contact Me
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            </Link>
           </motion.div>
           
           <motion.img

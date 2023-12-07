@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .about {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,14 @@
   min-height: 100vh;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   color: white;
+
+  @include mobile {
+      height: 50%;
+      width: 100%;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
 
   .about-content {
     display: flex;
@@ -89,9 +99,9 @@
     align-items: center;
     padding: 40px 0;
     margin-top: 80px;
-    /* Added to create space between sections */
 
     h2 {
+      margin-top: -120px;
       font-size: 2rem;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -100,139 +110,95 @@
     .progress-bar {
       width: 100%;
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
-      
-      margin-top: 15px;
+      justify-content: center;
+      margin-top: 20px;
 
       .skill {
-        width: 100%;
-        height: 10px;
-        border-radius: 20px;
+        position: relative;
+        width: calc(50% - 15px);
+        max-width: 300px;
+        height: 39px;
+        background-color: #eee;
+        border-radius: 5px;
         overflow: hidden;
-        background-color: rgba(255,255,255,0.3);
-        margin: 5px;
-        padding: 0;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px;
-        color: white;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        padding: 0 10px;
+        color: #0c0c1d;
         font-size: 1rem;
-        background-color: #ff6347;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        border: 2px solid #ff6347;
-        transition: width 1s ease;
-
-        span {
-          
-          margin-right: 10px;
-        }
 
         &.deep-tissue {
-          width: 90%;
+          background-color: #ffcccb;
         }
 
         &.nuru {
-          width: 85%;
+          background-color: #ffc3a0;
         }
 
         &.sensual {
-          width: 80%;
+          background-color: #ffd699;
         }
 
         &.cupping {
-          width: 80%;
+          background-color: #d4a5a5;
         }
 
         &.prostate {
-          width: 85%;
+          background-color: #ffb6c1;
         }
 
         &.heated-stone {
-          width: 90%;
+          background-color: #f0c987;
         }
 
         &.shiatsu {
-          width: 86%;
+          background-color: #c5d0e6;
         }
 
         &.sports {
-          width: 92%;
+          background-color: #a7c5eb;
         }
 
         &.thai {
-          width: 82%;
+          background-color: #99d8d0;
         }
 
         &.geriatric {
-          width: 88%;
+          background-color: #c2dbf1;
+        }
+
+        .name {
+          font-weight: bold;
+          margin-bottom: 5px;
+          order: 2;
+        }
+
+        .bar {
+          height: 100%;
+          background-color: #ff6347;
+          transition: width 1s ease;
+          order: 1;
         }
       }
     }
   }
 
-  .testimonials-section {
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    h2 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 20px;
-      width: 100%;
-    }
-
-    .testimonial {
-      background-color: #f9f9f9;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      width: calc(50% - 10px);
-    }
-
-      p {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-        color: #0c0c1d;
-      }
-    
-      h3 {
-        font-size: 1rem;
-        text-align: right;
-        color: #0c0c1d;
-      }
-      
-  }
-
-  .video-section {
-    width: 80%;
-    /* Add your video section styles here */
-  }
-
-  .picture-section {
-    width: 80%;
-    /* Add your picture section styles here */
-  }
-
   .certificate-section {
-      
     align-items: center;
     justify-content: center;
 
     h2 {
+      /* Add your certificate section styles here */
+    }
 
-    }  
-
-    img{
+    img {
       margin: 10px;
       width: 200px;
       height: auto;
     }
-    /* Add your certificate section styles here */
   }
 }

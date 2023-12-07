@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./about.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const textVariants = {
   initial: {
@@ -24,25 +25,6 @@ const textVariants = {
     },
   },
 };
-
-const testimonials = [
-  {
-    name: 'James Turner',
-    text: "I've been a regular client for the past year, and the quality of service has been consistently excellent. The deep tissue massage is my personal favorite. It's clear that Rita Scholl is highly skilled and dedicated to promoting wellness and relaxation."
-  },
-  {
-    name: 'Robert Johnson',
-    text: "Rita Spa environment is so calming and she is incredibly friendly. The heated stone massage was a rejuvenating experience that I would recommend to anyone looking to foster balance and tranquility in their life."
-  },
-  {
-    name: 'Emily Rodriguez',
-    text: "The level of service at Ritas Spa is unparalleled. I've tried various services, but the Thai Massage stands out. It's a truly therapeutic experience that leaves me feeling refreshed and revitalized every time. I can't recommend them enough!"
-  },
-  {
-    name: 'Sarah Thompson',
-    text:  "I've experienced various massages, but Rita Scholl stands out! Her intuitive touch and personalized approach made my session truly rejuvenating. I feel more relaxed and centered than ever. Highly recommend!"
-  }
-]
 
 const About = () => {
   const ref = useRef();
@@ -72,11 +54,13 @@ const About = () => {
             Committed to your relaxation and well-being, I bring the healing
             touch of massage to enhance your overall balance and tranquility.
           </motion.p>
-          <button>WHAT WE DO?</button>
+          <Link to="Services" smooth={true} duration={50}>
+            <button>WHAT I DO?</button>
+          </Link>
         </motion.div>
       </div>
       <div className="mission-section">
-        <motion.h2 variants={textVariants}>Our Mission</motion.h2>
+        <motion.h2 variants={textVariants}>Mission</motion.h2>
         <motion.p variants={textVariants}>
           Dedicated to promoting wellness and relaxation, I aim to provide a
           rejuvenating experience through the art of massage therapy, fostering
@@ -159,16 +143,6 @@ const About = () => {
         </div>
       </div>
       
-      <div className="testimonials-section">
-        <h2>Testiminials</h2>
-        {
-          testimonials.map((testimonial, index) => (
-        <div key={index} className="testimonial">
-          <p>{testimonial.text}</p>
-          <h3>- {testimonial.name}</h3>
-        </div>))
-        }
-      </div>
       <div className="video-section">
         {/* Add your video elements here */}
       </div>

@@ -32,10 +32,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_hnv07oc",
-        "template_6hr365m",
+        "service_5shodch",
+        "template_z1vsnvp",
         formRef.current,
-        "3Jr3UQctch9lVyz8w"
+        "1LnoJmbJ_I2fti_KN"
       )
       .then(
         (result) => {
@@ -49,6 +49,7 @@ const Contact = () => {
 
   return (
     <motion.div
+      id="Contact"
       ref={ref}
       className="contact"
       variants={variants}
@@ -80,16 +81,17 @@ const Contact = () => {
         <motion.div className="item" variants={variants}>
           <h2>Snapchat</h2>
           <span>schollrita121</span>
+          
         </motion.div>
         {/* Social Media Icons */}
           <motion.div variants={variants} className="socialIcons">
-            <a href="your-instagram-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/ritascholl446/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="your-snapchat-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.snapchat.com/add/schollrita121" target="_blank" rel="noopener noreferrer">
               <FaSnapchat />
             </a>
-            <a href="your-facebook-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/rita.scholl" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
           </motion.div>
