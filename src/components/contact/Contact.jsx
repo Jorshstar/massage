@@ -60,27 +60,27 @@ const Contact = () => {
         <motion.h1 variants={variants}>For session bookings and more information</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Email</h2>
-          <span>ritascholl812@gmail.com</span>
+          <span>emmajackson479@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Signal</h2>
-          <span>7162885098 or Rita Scholl</span>
+          <span>9312299152</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
+          <h2>Text no</h2>
           <span>9312299152</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Instagram</h2>
-          <span>ritascholl812</span>
+          <span>ritascholl566</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Facebook</h2>
-          <span>rita scholl</span>
+          <h2>Telegram</h2>
+          <span>ritascholl46</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Snapchat</h2>
-          <span>schollrita121</span>
+          <span>rita_scholl24</span>
           
         </motion.div>
         {/* Social Media Icons */}
