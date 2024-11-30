@@ -60,7 +60,7 @@ const Contact = () => {
         <motion.h1 variants={variants}>For session bookings and more information</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Email</h2>
-          <span>emmajackson479@gmail.com</span>
+          <span>scholllrota@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Signal</h2>
@@ -68,7 +68,7 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Text no</h2>
-          <span>9312299152</span>
+          <span>9493128529</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Instagram</h2>
@@ -76,7 +76,7 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Telegram</h2>
-          <span>ritascholl46</span>
+          <span>ritascholl4488</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Snapchat</h2>
