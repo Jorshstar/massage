@@ -90,7 +90,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <a href="https://form.jotform.com/231960883666065" target="_blank" rel="noopener noreferrer">
+            <a href="https://form.jotform.com/251275694647065" target="_blank" rel="noopener noreferrer">
               <button>Schedule Appointment</button>
             </a>
           </motion.div>
