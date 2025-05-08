@@ -68,30 +68,28 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Text no</h2>
-          <span>9493128529</span>
+          <span>+1283-229-2144</span>
+
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Instagram</h2>
-          <span>ritascholl566</span>
+          <span>Ritaschollspa</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Telegram</h2>
-          <span>ritascholl4488</span>
+          <h2>Whatsapp</h2>
+          <span>+12832292144</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Snapchat</h2>
-          <span>rita_scholl24</span>
+          <h2>Facebook</h2>
+          <span>Rita scholl</span>
           
         </motion.div>
         {/* Social Media Icons */}
           <motion.div variants={variants} className="socialIcons">
-            <a href="https://www.instagram.com/ritascholl446/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/ritaschollspa/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://www.snapchat.com/add/schollrita121" target="_blank" rel="noopener noreferrer">
-              <FaSnapchat />
-            </a>
-            <a href="https://www.facebook.com/rita.scholl" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/nancy.paulman.lor" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
           </motion.div>
