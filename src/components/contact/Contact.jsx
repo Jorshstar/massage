@@ -89,7 +89,7 @@ const Contact = () => {
             <a href="https://www.instagram.com/ritaschollspa/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://www.facebook.com/nancy.paulman.lor" target="_blank" rel="noopener noreferrer">
+            <a href="https://web.facebook.com/nancy.paulman.lor" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
           </motion.div>

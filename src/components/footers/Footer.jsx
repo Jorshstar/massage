@@ -10,10 +10,8 @@ const Footer = () => {
             <a href="https://www.instagram.com/ritascholl446/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://www.snapchat.com/add/schollrita121" target="_blank" rel="noopener noreferrer">
-              <FaSnapchat />
-            </a>
-            <a href="https://www.facebook.com/rita.scholl" target="_blank" rel="noopener noreferrer">
+            
+            <a href="https://web.facebook.com/nancy.paulman.lor" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
           
